@@ -1,12 +1,13 @@
 # A Dockerfile that sets up a full Gym and Pytorch
-FROM python:3.9.16
+#3.9.16
+FROM python:3.10-bullseye
 
 COPY . /app
 
 WORKDIR /app
 
 RUN apt-get -y update \
-    && apt-get install --no-install-recommends -y \
+    && apt-get install --no-install-recommends -y \ 
     unzip \
     libglu1-mesa-dev \
     libgl1-mesa-dev \

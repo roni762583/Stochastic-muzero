@@ -38,6 +38,7 @@ RUN pip install --upgrade pip \
     && pip install numpy torch torchvision matplotlib jupyterlab \
     && pip install gymnasium \
     && pip install ray[default] \
+    && pip install v20 \
     && pip install ipywidgets
 
 

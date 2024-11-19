@@ -48,4 +48,4 @@ RUN pip install --upgrade pip \
 EXPOSE 8888
 
 # Set the entry point to start JupyterLab
-ENTRYPOINT ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--notebook-dir=/app", "--NotebookApp.default_url=tutorial.ipynb,README.md", "--NotebookApp.terminals_enabled=True"]
+ENTRYPOINT ["jupyter-lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--notebook-dir=/app", "--NotebookApp.default_url=/lab", "--NotebookApp.terminals_enabled=True", "--NotebookApp.token=''", "--NotebookApp.password=''"]
